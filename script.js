@@ -39,10 +39,10 @@ function otomatis2b() {
 	kalimatc.innerHTML = kalimatc2.innerHTML;
     fthilang();
     ftganti = 2;
-    setTimeout(ftmuncul, 400);
+    setTimeout(ftmuncul, 100);
     kalimat.style.display = "none";
 	kalimatc.style.opacity = "1";
-	setTimeout(mulaict, 400);
+	setTimeout(mulaict, 100);
 }
 
 function otomatis3() {
@@ -120,7 +120,7 @@ function ditolak2() {
 }
 
 function mulaict() {
-	var timeleft = 7;
+	var timeleft = 3;
 	var downloadTimer = setInterval(function() {
 		timeleft--;
 		document.getElementById("ctimer").textContent = timeleft;
