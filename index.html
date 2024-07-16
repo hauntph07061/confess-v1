@@ -18,7 +18,6 @@
         <img src="assets/image/background.jpg" id="wallpaper"/>
     </div>
 	<audio id="linkmp3" src="assets/audio/confess.mp3" autoplay></audio>
-	<div id="youtube-player"></div>
     <div id='Content'>
         <div id="suratin" onClick="memulai(); audio.play();">
             <img src="assets/image/amplop.png"/>
@@ -177,31 +176,6 @@ setInterval(function name(params) {
 
 </script>
 
-
-<script src="https://www.youtube.com/iframe_api"></script>
-<script>
-  var player;
-
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('youtube-player', {
-      height: '0', // Đặt chiều cao thành 0 để chỉ có âm thanh
-      width: '0', // Đặt chiều rộng thành 0 để chỉ có âm thanh
-      videoId: 'W3iXuqUhFeQ', // ID của video YouTube
-      playerVars: {
-        'autoplay': 1, // Tự động phát video
-		'start': 15, // Bắt đầu từ 24 giây (0:24)
-        'controls': 0 // Ẩn các điều khiển của video
-      },
-      events: {
-        'onReady': onPlayerReady
-      }
-    });
-  }
-
-  function onPlayerReady(event) {
-    event.target.playVideo(); // Tự động phát video khi player sẵn sàng
-  }
-</script>
 
 
 
